@@ -1,0 +1,136 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  // リレーションのクエリに必要
+  previewFeatures = ["relationJoins"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @default(autoincrement()) @id
+  name String
+  posts Post[]
+}
+
+model Post {
+  id Int @default(autoincrement()) @id
+  author User @relation(fields: [authorId], references: [id])
+  authorId Int
+  body String
+}
+
+model Episode {
+  id Int @default(autoincrement()) @id
+  type String
+  username String
+  episodeId Int @unique
+  subTitle String
+  title String
+  thumbnail String
+  description String
+  docsUrl String
+  good Int
+  bad Int
+  new Boolean
+  newest Boolean
+  banned Boolean
+  recommend Boolean
+  embYt String
+  embRumble String
+  embVimeo String
+  embRec String
+  createdAt DateTime @default(now())
+  displayDate String
+  tags String[]
+  comments Comments[]
+  chapters Chapters[]
+}
+model Chapters {
+  id Int @id @default(autoincrement())
+  chapterId Int
+  ref Episode @relation(fields: [refId], references: [id])
+  refId Int
+  type String
+  username String
+  episodeId Int
+  subTitle String
+  title String
+  thumbnail String
+  description String
+  docsUrl String[]
+  good Int
+  bad Int
+  new Boolean
+  newest Boolean
+  banned Boolean
+  recommend Boolean
+  embYt String
+  embYtTime String
+  embRumble String
+  embRumbleTime String
+  embVimeo String
+  embVimeoTime String
+  embRec String
+  embRecTime String
+  createdAt DateTime @default(now())
+  displayDate String
+  tags String[]
+  comments String[]
+}
+model Comments {
+  id Int @id @default(autoincrement())
+  commentId Int @default(autoincrement())
+  ref Episode @relation(fields: [refCommentId], references: [id])
+  refCommentId Int
+  username String
+  body String
+  episodeId Int
+  good Int
+  bad Int
+  new Boolean
+  createdAt DateTime @default(now())
+  responses String[]
+}
+model Parody {
+  id Int @id @default(autoincrement())
+  type String
+  username String
+  parodyId Int
+  subTitle String
+  title String
+  thumbnail String
+  description String
+  docsUrl String
+  good Int
+  bad Int
+  new Boolean
+  newest Boolean
+  banned Boolean
+  recommend Boolean
+  embYt String
+  embRumble String
+  embVimeo String
+  embRec String
+  createdAt DateTime @default(now())
+  displayDate String
+  tags String[]
+}
+
+model RecommendCarousel {
+  id Int @id @default(autoincrement())
+  index Int @unique
+  alt String?
+  imgUrl String
+  linkUrl String
+  newFlag Boolean
+}
+

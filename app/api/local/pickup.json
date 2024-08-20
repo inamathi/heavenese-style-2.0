@@ -1,0 +1,66 @@
+[
+  {
+    "key": 1,
+    "index": 1,
+    "chapterCategory": "👉 Pickup",
+    "chapterCategoryKana": "ピックアップ",
+    "title": "ニュースのタイトル",
+    "fromEp": "episode200",
+    "description": "ここにチャプターカテゴリの説明が入ります。Pickupは、FFの告知やキッズクリスマス、Musicビデオの公開などに使います",
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png",
+    "linkUrl": "https://"
+  },
+  {
+    "key": 2,
+    "index": 2,
+    "chapterCategory": "🇯🇵 Climax Talk",
+    "chapterCategoryKana": "クライマックストーク",
+    "title": "戦場の歌人",
+    "fromEp": "episode200",
+    "description": "魂を揺さぶる、HEAVENESE style のメインコーナーです。誰もが知る人物から、意外な人物を様々なエピソードとともに取り上げ、現代人が忘れてしまった日本人のこころとは？と問いかけます",
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png",
+    "linkUrl": "https://"
+  },
+  {
+    "key": 3,
+    "index": 3,
+    "chapterCategory": "🛋 Guest Corner",
+    "chapterCategoryKana": "ゲストコーナー",
+    "title": "武田邦彦先生登場❗️",
+    "fromEp": "episode200",
+    "description": "様々なゲストをKBCにお招きし、世界情勢やあの話題、音楽の話まで幅広い話題をじっくりと伺います！たまにはハゲソンコーナーにも乱入？！",
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png",
+    "linkUrl": "https://"
+  },
+  {
+    "key": 4,
+    "index": 4,
+    "chapterCategory": "🌏 What in the World...",
+    "chapterCategoryKana": "世界では何が起こってる？",
+    "title": "衝撃❗️トランプ暗殺未遂事件🔫の瞬間",
+    "fromEp": "episode200",
+    "description": "世界での出来事、現地のニュース番組などからご紹介。日本のマスコミが報じない、世界の「今」をわかりやすく解説しながらお届けします。",
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png",
+    "linkUrl": "https://"
+  },
+  {
+    "key": 5,
+    "index": 5,
+    "chapterCategory": "🎷 ハゲソン",
+    "chapterCategoryKana": "ゲストコーナー",
+    "title": "I Say a Little Prayer",
+    "fromEp": "episode200",
+    "description": "誰もが知るあの名曲から、知る人ぞ知る名曲、最新ヒットから懐かしのアニメソングまで、HEAVENESEならではのアレンジでお届けします。",
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png"
+  },
+  {
+    "key": 6,
+    "index": 6,
+    "chapterCategory": "🎷 ハゲソン",
+    "chapterCategoryKana": "ゲストコーナー",
+    "title": "I Say a Little Prayer",
+    "fromEp": "episode200",
+    "description": "誰もが知るあの名曲から、知る人ぞ知る名曲、最新ヒットから懐かしのアニメソングまで、HEAVENESEならではのアレンジでお届けします。",
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png"
+  }
+]

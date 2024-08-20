@@ -1,0 +1,164 @@
+[
+  {
+    "key": 1,
+    "index": 1,
+    "tag": "トニーローガン",
+    "tagCategory": "human"
+  },
+  {
+    "key": 2,
+    "index": 2,
+    "tag": "ジョー・バイデン",
+    "tagCategory": "human"
+  },
+  {
+    "key": 3,
+    "index": 3,
+    "tag": "ドナルド・トランプ",
+    "tagCategory": "human"
+  },
+  {
+    "key": 4,
+    "index": 4,
+    "tag": "プーチン",
+    "tagCategory": "human"
+  },
+  {
+    "key": 5,
+    "index": 5,
+    "tag": "カマラ・ハリス",
+    "tagCategory": "human"
+  },
+  {
+    "key": 6,
+    "index": 6,
+    "tag": "タッカー・カールソン",
+    "tagCategory": "human"
+  },
+  {
+    "key": 7,
+    "index": 7,
+    "tag": "マジョリー・テイラー・グリーン",
+    "tagCategory": "human"
+  },
+  {
+    "key": 8,
+    "index": 8,
+    "tag": "キャリー・レイク",
+    "tagCategory": "human"
+  },
+  {
+    "key": 9,
+    "index": 9,
+    "tag": "マッキャオ",
+    "tagCategory": "human"
+  },
+  {
+    "key": 10,
+    "index": 10,
+    "tag": "我那覇真子",
+    "tagCategory": "human"
+  },
+  {
+    "key": 11,
+    "index": 11,
+    "tag": "What in the WORLD is HAPPENING?",
+    "tagCategory": "corner"
+  },
+  {
+    "key": 12,
+    "index": 12,
+    "tag": "ゲストコーナー",
+    "tagCategory": "corner"
+  },
+  {
+    "key": 13,
+    "index": 13,
+    "tag": "クライマックストーク",
+    "tagCategory": "corner"
+  },
+  {
+    "key": 14,
+    "index": 14,
+    "tag": "国内ニュース",
+    "tagCategory": "corner"
+  },
+  {
+    "key": 15,
+    "index": 15,
+    "tag": "ビタミンメッセージ💊",
+    "tagCategory": "corner"
+  },
+  {
+    "key": 16,
+    "index": 16,
+    "tag": "励ましソング🎵",
+    "tagCategory": "music"
+  },
+  {
+    "key": 17,
+    "index": 17,
+    "tag": "エンディング🎵",
+    "tagCategory": "music"
+  },
+  {
+    "key": 18,
+    "index": 18,
+    "tag": "よくもやったな💢BANソング",
+    "tagCategory": "music"
+  },
+  {
+    "key": 19,
+    "index": 19,
+    "tag": "社会風刺ソング🎵",
+    "tagCategory": "music"
+  },
+  {
+    "key": 20,
+    "index": 20,
+    "tag": "気候変動デマ",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 21,
+    "index": 21,
+    "tag": "米大統領選挙",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 22,
+    "index": 22,
+    "tag": "国内政治",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 23,
+    "index": 23,
+    "tag": "SDGs",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 24,
+    "index": 24,
+    "tag": "イスラエル問題",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 25,
+    "index": 25,
+    "tag": "ロシア・ウクライナ問題",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 26,
+    "index": 26,
+    "tag": "人口削減",
+    "tagCategory": "topics"
+  },
+  {
+    "key": 27,
+    "index": 27,
+    "tag": "ジェンダー問題",
+    "tagCategory": "topics"
+  }
+]

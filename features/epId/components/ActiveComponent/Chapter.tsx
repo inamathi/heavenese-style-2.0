@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { TypeChapter } from "@/app/types/types";
+import { TypeChapter } from "@/types/types";
 
 const Chapter = ({ ...epData }) => {
   return (

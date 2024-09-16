@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { TypeComment, TypeEpisode } from "@/app/types/types";
+import { TypeComment, TypeEpisode } from "@/types/types";
 import parse from "html-react-parser";
 import { getEpisodeDetailData } from "@/app/episode/[epId]/page";
 

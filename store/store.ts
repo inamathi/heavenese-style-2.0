@@ -1,15 +1,15 @@
-import { Tuple, configureStore } from '@reduxjs/toolkit'
+import { Tuple, configureStore } from "@reduxjs/toolkit";
 import {
   TypedUseSelectorHook,
   useDispatch,
   useSelector,
   useStore
-} from 'react-redux'
-import { logger } from 'redux-logger'
+} from "react-redux";
+import { logger } from "redux-logger";
 
-import { userReducer } from '@/hooks/userSlice'
-import { searchCondReducer } from '@/hooks/searchCondSlice'
-import { hamburgerReducer } from '@/hooks/HamburgerSlice'
+import { userReducer } from "@/hooks/userSlice";
+import { searchCondReducer } from "@/hooks/searchCondSlice";
+import { hamburgerReducer } from "@/hooks/HamburgerSlice";
 
 // const middlewares = []
 // middlewares.push(logger)
@@ -22,13 +22,13 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
   // middleware: () => new Tuple(logger)
-})
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
-export const useAppDispatch: () => AppDispatch = useDispatch
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
+export const useAppDispatch: () => AppDispatch = useDispatch;
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 // TODO：これ以降あとで消す
 

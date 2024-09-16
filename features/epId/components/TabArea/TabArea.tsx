@@ -1,6 +1,6 @@
 import React from "react";
 // Episodeの型をインポート
-import { TypeChapter, TypeEpisode, TypeComment } from "@/app/types/types";
+import { TypeChapter, TypeEpisode, TypeComment } from "@/types/types";
 // タブで表示を切り替えるコンポーネントをインポート
 import TabChapter from "@/features/epId/components/TabArea/TabChapter/TabChapter";
 import TabComment from "@/features/epId/components/TabArea/TabComment/TabComment";

@@ -9,8 +9,8 @@ import {
   TypeChapter,
   TypeEpisode,
   TypeComment,
-  TypeParams,
-} from "@/app/types/types";
+  TypeParams
+} from "@/types/types";
 // プレイヤーをインポート
 import { YouTubeEmbed } from "@next/third-parties/google";
 import { getEpisodeDetailData } from "@/app/episode/[epId]/page";
@@ -27,7 +27,7 @@ const EpisodeDetailPage = async ({ params }: TypeParams) => {
     displayDate,
     embYt,
     chapters,
-    comments,
+    comments
   } = episodeDetailData;
   return (
     <div>

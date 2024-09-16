@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { TypeChapter, TypeEpisode } from "@/app/types/types";
+import { TypeChapter, TypeEpisode } from "@/types/types";
 import parse from "html-react-parser";
 
 async function getEpisodeDetailData(id: number) {
   const response = await fetch(`http://localhost:3000/api/episode/${id}`, {
-    cache: "no-store",
+    cache: "no-store"
   });
   const episodeDetailData: TypeEpisode = await response.json();
   return episodeDetailData;
@@ -23,7 +23,7 @@ const TabChapter = async ({ params }: { params: { epId: number } }) => {
     displayDate,
     embYt,
     chapters,
-    comments,
+    comments
   } = episodeDetailData;
   return (
     <div>

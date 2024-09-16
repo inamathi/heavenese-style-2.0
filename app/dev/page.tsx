@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import ContentsCardList from "../components/elements/card/EpisodeCardList";
-import { TypePost, TypeUser } from "../types/types";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import ContentsCardList from "../../components/elements/card/EpisodeCardList";
+import { TypePost, TypeUser } from "../../types/types";
 import aaa from "@/public/img/thumbnail/tmb-1200-l.png";
 
 async function getDev() {
   const response = await fetch("http://localhost:3000/api/dev", {
-    cache: "no-store",
+    cache: "no-store"
   });
 
   const allUserData: TypeUser[] = await response.json();

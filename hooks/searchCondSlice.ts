@@ -1,33 +1,33 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  searchCond: '',
+  searchCond: "",
   showDialog: false
-}
+};
 
 export const searchCondSlice = createSlice({
-  name: 'searchCond',
+  name: "searchCond",
   initialState,
   reducers: {
     setCond: (state, action) => {
-      state.searchCond = action.payload
+      state.searchCond = action.payload;
     },
     clearCond: (state) => {
-      state.searchCond = ''
+      state.searchCond = "";
     },
     showSearchCondDialog: (state) => {
-      state.showDialog = true
+      state.showDialog = true;
     },
     closeSearchCondDialog: (state) => {
-      state.showDialog = false
+      state.showDialog = false;
     }
   }
-})
+});
 
 export const {
   setCond,
   clearCond,
   showSearchCondDialog,
   closeSearchCondDialog
-} = searchCondSlice.actions
-export const searchCondReducer = searchCondSlice.reducer
+} = searchCondSlice.actions;
+export const searchCondReducer = searchCondSlice.reducer;

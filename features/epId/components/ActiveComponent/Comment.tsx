@@ -1,5 +1,5 @@
-import SubmitButton from "@/app/components/elements/button/SubmitButton";
-import { TypeComment } from "@/app/types/types";
+import SubmitButton from "@/components/elements/button/SubmitButton";
+import { TypeComment } from "@/types/types";
 import React from "react";
 
 const Comment = ({ ...epData }) => {

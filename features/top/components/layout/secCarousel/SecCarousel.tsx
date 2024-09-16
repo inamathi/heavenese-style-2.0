@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { CategoryButton } from "@/app/components/elements/button/Button";
+import { CategoryButton } from "@/components/elements/button/Button";
 
 const SecCarousel = () => {
   return (

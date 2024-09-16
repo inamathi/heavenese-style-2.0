@@ -1,17 +1,18 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import EpisodeCardList from "../components/elements/card/EpisodeCardList";
-import TaglistModal from "../components/elements/taglistModal/TaglistModal";
-import { TypeEpisode } from "../types/types";
-import PageTitle from "../components/elements/pagetitle/PageTitle";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import EpisodeCardList from "../../components/elements/card/EpisodeCardList";
+import TaglistModal from "../../components/SearchCondButton";
+import { TypeEpisode } from "../../types/types";
+import PageTitle from "@/components/elements/pagetitle/PageTitle";
 import Tags from "@/app/api/local/tags.json";
+import SearchCondButton from "../../components/SearchCondButton";
 
 // ReactModal.setAppElement(".App");
 
 async function getEpisode() {
   const response = await fetch("http://localhost:3000/api/episode", {
-    cache: "no-store",
+    cache: "no-store"
   });
 
   const allEpisodeData: TypeEpisode[] = await response.json();
@@ -25,11 +26,12 @@ export default async function page() {
   const tagList = Tags;
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <PageTitle pagetitle={pagetitle} />
-      <TaglistModal tagList={tagList} />
+      <SearchCondButton />
+      {/* <TaglistModal tagList={tagList} /> */}
       <EpisodeCardList allEpisodeData={allEpisodeData} />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

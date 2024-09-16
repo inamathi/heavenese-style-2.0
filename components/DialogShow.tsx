@@ -1,10 +1,10 @@
-'use client'
-import SearchCond from '@/components/SearchCond'
-import { useAppSelector } from '@/store/store'
+"use client";
+import SearchCond from "@/components/SearchCond";
+import { useAppSelector } from "@/store/store";
 
 // use Client で使用するために ダイアログ をラップする
 const DialogShow = () => {
-  const showSearchCond = useAppSelector((state) => state.searchCond.showDialog)
+  const showSearchCond = useAppSelector((state) => state.searchCond.showDialog);
 
   // ダイアログを表示する
   const showDialog = () => {
@@ -12,17 +12,17 @@ const DialogShow = () => {
 
     // 検索条件ダイアログ
     if (showSearchCond) {
-      return <SearchCond />
+      return <SearchCond />;
     }
 
-    return null
-  }
+    return null;
+  };
 
   return (
     <>
       {/* ダイアログの表示 */}
       {showDialog()}
     </>
-  )
-}
-export default DialogShow
+  );
+};
+export default DialogShow;

@@ -1,12 +1,12 @@
 import { useEffect, useReducer } from "react";
 import Image from "next/image";
-import { TypeChapter, TypeEpisode } from "@/app/types/types";
+import { TypeChapter, TypeEpisode } from "@/types/types";
 import { getEpisodeDetailData } from "@/app/episode/[epId]/page";
 
 const initialState = {
   data: null,
   loading: true,
-  error: null,
+  error: null
 };
 
 const reducer = (state, action) => {
@@ -29,7 +29,7 @@ const TabChapter = async ({ params }: { params: { epId: number } }) => {
         const response = await fetch(
           `http://localhost:3000/api/episode/${id}`,
           {
-            cache: "no-store",
+            cache: "no-store"
           }
         );
         const result = await response.json();
@@ -56,7 +56,7 @@ const TabChapter = async ({ params }: { params: { epId: number } }) => {
     displayDate,
     embYt,
     chapters,
-    comments,
+    comments
   } = episodeDetailData;
   return (
     <div>

@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import React, { ReactNode } from 'react'
-import styles from './styles.module.scss'
-import { useAppDispatch } from '@/store/store'
-import { closeSearchCondDialog, setCond } from '@/hooks/searchCondSlice'
-import Categories from '@/app/api/local/tags.json'
-import { TypeCategory, TypeItem } from '@/types/types'
+import React, { ReactNode } from "react";
+import styles from "./styles.module.scss";
+import { useAppDispatch } from "@/store/store";
+import { closeSearchCondDialog, setCond } from "@/hooks/searchCondSlice";
+import Categories from "@/app/api/local/tags.json";
+import { TypeCategory, TypeItem } from "@/types/types";
 
 // const modalStyle = {
 //   overlay: {
@@ -27,31 +27,31 @@ import { TypeCategory, TypeItem } from '@/types/types'
 // }
 
 const SearchCond = () => {
-  const dispach = useAppDispatch()
+  const dispach = useAppDispatch();
 
   // 閉じるボタン
   const onClickClose = () => {
-    dispach(closeSearchCondDialog())
-  }
+    dispach(closeSearchCondDialog());
+  };
 
   // カテゴリタップボタン
   const onClickSelect = (item: string) => {
-    dispach(setCond(item))
-    alert(item)
-    dispach(closeSearchCondDialog())
+    dispach(setCond(item));
+    alert(item);
+    dispach(closeSearchCondDialog());
 
     // TODO
     // チャプター検索へ飛ばす
-  }
+  };
 
   // カテゴリ描画
   const renderCategories = (): ReactNode => {
     // TODO：DBから取得する際、並び順は指定して取得する
     // DBにやらせれば良いことは、プログラム中でやらないようにしたいが可能か？
     // 要確認
-    const categories = Categories
+    const categories = Categories;
     // alert(categories.length || '件')
-    if (!categories.length) return null
+    if (!categories.length) return null;
 
     return (
       <div
@@ -82,8 +82,8 @@ const SearchCond = () => {
           ))}
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <div>
@@ -93,7 +93,7 @@ const SearchCond = () => {
       {/* カテゴリ描画 */}
       {renderCategories()}
     </div>
-  )
-}
+  );
+};
 
-export default SearchCond
+export default SearchCond;

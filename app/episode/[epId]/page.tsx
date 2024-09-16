@@ -10,11 +10,11 @@ import {
   TypeChapter,
   TypeEpisode,
   TypeComment,
-  TypeParams,
-} from "@/app/types/types";
+  TypeParams
+} from "@/types/types";
 // プレイヤーをインポート
 import { YouTubeEmbed } from "@next/third-parties/google";
-import Header from "@/app/components/header/Header";
+import Header from "@/components/header/Header";
 import TabWindow from "@/features/epId/components/TabWindow/TabWindow";
 import Viewer from "@/features/epId/components/Viewer/Viewer";
 import TabArea from "@/features/epId/components/TabArea/TabArea";
@@ -22,7 +22,7 @@ import ActiveComponent from "@/features/epId/components/ActiveComponent/ActiveCo
 
 export async function getEpisodeDetailData(id: number) {
   const response = await fetch(`http://localhost:3000/api/episode/${id}`, {
-    cache: "no-store",
+    cache: "no-store"
   });
 
   const episodeDetailData: TypeEpisode = await response.json();
@@ -40,7 +40,7 @@ const EpisodeDetailPage = async ({ params }: TypeParams) => {
         <div className="w-2/3">
           <Viewer
             params={{
-              epId: episodeId,
+              epId: episodeId
             }}
           />
           <Comment {...epData} />

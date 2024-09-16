@@ -1,23 +1,23 @@
-import { InitialUserState } from '@/types/types'
-import { createSlice } from '@reduxjs/toolkit'
+import { InitialUserState } from "@/types/types";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState: InitialUserState = {
   user: null
-}
+};
 
 // userのログイン状態管理
 export const userSlice = createSlice({
-  name: 'user',
+  name: "user",
   initialState,
   reducers: {
     login: (state, action) => {
-      state.user = action.payload
+      state.user = action.payload;
     },
     logout: (state) => {
-      state.user = null
+      state.user = null;
     }
   }
-})
+});
 
-export const { login, logout } = userSlice.actions
-export const userReducer = userSlice.reducer
+export const { login, logout } = userSlice.actions;
+export const userReducer = userSlice.reducer;

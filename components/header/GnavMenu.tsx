@@ -1,25 +1,25 @@
-'use client'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type PropsType = {
-  propClass?: string
-  setIsMenuOpen?: (arg0: boolean) => void
-}
+  propClass?: string;
+  setIsMenuOpen?: (arg0: boolean) => void;
+};
 
 const GnavMenu = ({ propClass, setIsMenuOpen }: PropsType) => {
-  const currentPath = usePathname()
+  const currentPath = usePathname();
 
   const links = [
-    { label: 'TOP', href: '/' },
-    { label: 'Episode', href: '/episode' },
-    { label: 'Pickup', href: '/pickup' },
-    { label: 'Chapter Ch.', href: '/chapter' },
-    { label: 'Parody', href: '/parody' },
-    { label: 'Music', href: '/music' },
-    { label: 'The Message', href: '/message' },
-    { label: 'Admin', href: '/admin', admin: true }
-  ]
+    { label: "TOP", href: "/" },
+    { label: "Episode", href: "/episode" },
+    { label: "Pickup", href: "/pickup" },
+    { label: "Chapter Ch.", href: "/chapter" },
+    { label: "Parody", href: "/parody" },
+    { label: "Music", href: "/music" },
+    { label: "The Message", href: "/message" },
+    { label: "Admin", href: "/admin", admin: true }
+  ];
 
   return (
     <div
@@ -31,11 +31,11 @@ const GnavMenu = ({ propClass, setIsMenuOpen }: PropsType) => {
           onClick={() => setIsMenuOpen && setIsMenuOpen(false)}
           href={link.href}
           className={`w-[fit-content] hover:bg-slate-700 hover:text-primary/60 px-3 py-1 rounded-md font-medium cursor-pointer text-sm
-            ${link.admin && 'bg-slate-500 text-white'}
+            ${link.admin && "bg-slate-500 text-white"}
             ${
               currentPath == link.href
-                ? 'bg-slate-700 cursor-default shadow-1 text-primary/70 hover:text-primary/60 '
-                : ''
+                ? "bg-slate-700 cursor-default shadow-1 text-primary/70 hover:text-primary/60 "
+                : ""
             }`}
           key={link.label}
         >
@@ -43,7 +43,7 @@ const GnavMenu = ({ propClass, setIsMenuOpen }: PropsType) => {
         </Link>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default GnavMenu
+export default GnavMenu;

@@ -5,7 +5,7 @@ import TabChapter from "@/features/epId/components/TabWindow/TabContents/TabChap
 import TabComment from "@/features/epId/components/TabWindow/TabContents/TabComment";
 import TabDescription from "@/features/epId/components/TabWindow/TabContents/TabDescription";
 // Episodeの型をインポート
-import { TypeChapter, TypeEpisode, TypeComment } from "@/app/types/types";
+import { TypeChapter, TypeEpisode, TypeComment } from "@/types/types";
 
 type TabProps = {
   tabs: string[];

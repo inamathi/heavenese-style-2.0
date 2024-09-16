@@ -1,12 +1,12 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import ViewerButton from '../button/ViewerButton'
-import { TypeEpisode } from '../../../types/types'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import ViewerButton from "../button/ViewerButton";
+import { TypeEpisode } from "../../../types/types";
 
 interface EpisodeDataProps {
   //map関数で展開するため、配列であることを定義
-  episodeData: TypeEpisode
+  episodeData: TypeEpisode;
 }
 
 const EpisodeCard = ({ episodeData }: EpisodeDataProps) => {
@@ -19,12 +19,12 @@ const EpisodeCard = ({ episodeData }: EpisodeDataProps) => {
     description,
     createdAt,
     displayDate
-  } = episodeData
+  } = episodeData;
   return (
     <div className="flex flex-col gap-1 border-2 p-2 border-radius rounded-md border-1 border-slate-100 max-w-[250px]">
       <Image
         src={thumbnail}
-        style={{ width: '240px' }}
+        style={{ width: "240px" }}
         width="240"
         height="171"
         alt=""
@@ -39,7 +39,7 @@ const EpisodeCard = ({ episodeData }: EpisodeDataProps) => {
         <ViewerButton />
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default EpisodeCard
+export default EpisodeCard;

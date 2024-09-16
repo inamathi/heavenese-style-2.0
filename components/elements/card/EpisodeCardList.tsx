@@ -1,11 +1,11 @@
-import React from 'react'
-import EpisodeCard from './EpisodeCard'
-import { TypeEpisode } from '@/types/types'
+import React from "react";
+import EpisodeCard from "./EpisodeCard";
+import { TypeEpisode } from "@/types/types";
 
 // Propsで型を渡すためinterfaceで定義
 interface EpisodeListProps {
   //map関数で展開するため、配列であることを定義
-  allEpisodeData: TypeEpisode[]
+  allEpisodeData: TypeEpisode[];
 }
 
 const EpisodeCardList = ({ allEpisodeData }: EpisodeListProps) => {
@@ -30,7 +30,7 @@ const EpisodeCardList = ({ allEpisodeData }: EpisodeListProps) => {
         </>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default EpisodeCardList
+export default EpisodeCardList;

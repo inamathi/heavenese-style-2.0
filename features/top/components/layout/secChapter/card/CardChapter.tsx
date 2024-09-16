@@ -18,7 +18,7 @@ const CardChapter = ({
   className,
   alt,
   width,
-  height,
+  height
 }: ChapterTitleProps) => {
   return (
     <div className="w-full">

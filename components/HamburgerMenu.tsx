@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import GnavMenu from "../../header/GnavMenu";
+import GnavMenu from "@/components/header/GnavMenu";
 
-const Drawer = () => {
+const HamburgerMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <nav className="relative z-10 pr-8 pl-2 py-2 flex justify-between items-center text-slate-950 min-[900px]:hidden ">
@@ -76,4 +76,4 @@ const Drawer = () => {
   );
 };
 
-export default Drawer;
+export default HamburgerMenu;

@@ -1,9 +1,9 @@
 // 'use client'
 
-import React from 'react'
-import Link from 'next/link'
-import Drawer from '../elements/drawer/Drawer'
-import GnavMenu from './GnavMenu'
+import React from "react";
+import Link from "next/link";
+import Drawer from "../HambargerMenu";
+import GnavMenu from "./GnavMenu";
 const Header = () => {
   return (
     <header
@@ -22,7 +22,7 @@ const Header = () => {
       </nav>
       <Drawer />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

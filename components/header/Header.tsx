@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import Drawer from "../HambargerMenu";
+import Drawer from "../HamburgerMenu";
 import GnavMenu from "./GnavMenu";
 const Header = () => {
   return (

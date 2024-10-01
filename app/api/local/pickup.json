@@ -51,7 +51,8 @@
     "title": "I Say a Little Prayer",
     "fromEp": "episode200",
     "description": "誰もが知るあの名曲から、知る人ぞ知る名曲、最新ヒットから懐かしのアニメソングまで、HEAVENESEならではのアレンジでお届けします。",
-    "thumbnail": "/img/thumbnail/tmb-1200-l.png"
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png",
+    "linkUrl": "https://"
   },
   {
     "key": 6,
@@ -61,6 +62,7 @@
     "title": "I Say a Little Prayer",
     "fromEp": "episode200",
     "description": "誰もが知るあの名曲から、知る人ぞ知る名曲、最新ヒットから懐かしのアニメソングまで、HEAVENESEならではのアレンジでお届けします。",
-    "thumbnail": "/img/thumbnail/tmb-1200-l.png"
+    "thumbnail": "/img/thumbnail/tmb-1200-l.png",
+    "linkUrl": "https://"
   }
 ]

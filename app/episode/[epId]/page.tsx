@@ -14,7 +14,7 @@ import {
 } from "@/types/types";
 // プレイヤーをインポート
 import { YouTubeEmbed } from "@next/third-parties/google";
-import Header from "@/components/header/Header";
+import Header from "@/components/Header";
 import TabWindow from "@/features/epId/components/TabWindow/TabWindow";
 import Viewer from "@/features/epId/components/Viewer/Viewer";
 import TabArea from "@/features/epId/components/TabArea/TabArea";

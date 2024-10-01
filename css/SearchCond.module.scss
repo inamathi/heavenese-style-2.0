@@ -1,0 +1,31 @@
+.close {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  top: 25px;
+  right: 35px;
+  z-index: 999;
+  cursor: pointer;
+  &:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 24px;
+    background: black;
+    transform: rotate(45deg);
+    position: relative;
+    top: -50%;
+    left: 50%;
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 24px;
+    background: black;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+}

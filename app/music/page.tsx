@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import EpisodeCardList from "../../components/elements/card/EpisodeCardList";
 import { TypeEpisode } from "../../types/types";
 import PageTitle from "../../components/elements/pagetitle/PageTitle";

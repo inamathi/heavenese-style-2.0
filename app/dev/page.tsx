@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import ContentsCardList from "../../components/elements/card/EpisodeCardList";
 import { TypePost, TypeUser } from "../../types/types";
 import aaa from "@/public/img/thumbnail/tmb-1200-l.png";

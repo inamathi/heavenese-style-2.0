@@ -1,44 +1,25 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import styles from "./styles.module.scss";
+import styles from "@/css/SearchCond.module.scss";
 import { useAppDispatch } from "@/store/store";
 import { closeSearchCondDialog, setCond } from "@/hooks/searchCondSlice";
 import Categories from "@/app/api/local/tags.json";
 import { TypeCategory, TypeItem } from "@/types/types";
 
-// const modalStyle = {
-//   overlay: {
-//     // position: "fixed",
-//     top: 0,
-//     left: 0,
-//     backgroundColor: 'rgba(0,0,0,0.85)'
-//   },
-//   content: {
-//     // position: "absolute",
-//     top: '5rem',
-//     left: '5rem',
-//     right: '5rem',
-//     bottom: '5rem',
-//     backgroundColor: '#fff',
-//     borderRadius: '8px',
-//     padding: '30px'
-//   }
-// }
-
 const SearchCond = () => {
-  const dispach = useAppDispatch();
+  const dispatch = useAppDispatch();
 
   // 閉じるボタン
   const onClickClose = () => {
-    dispach(closeSearchCondDialog());
+    dispatch(closeSearchCondDialog());
   };
 
   // カテゴリタップボタン
   const onClickSelect = (item: string) => {
-    dispach(setCond(item));
+    dispatch(setCond(item));
     alert(item);
-    dispach(closeSearchCondDialog());
+    dispatch(closeSearchCondDialog());
 
     // TODO
     // チャプター検索へ飛ばす
@@ -54,10 +35,7 @@ const SearchCond = () => {
     if (!categories.length) return null;
 
     return (
-      <div
-      // TODO：全画面でz-indexで手前に表示したいが、無理か
-      // className="fixed left-0 top-0 mt-10 bg-slate-950 opacity-500 z-50 overflow-hidden "
-      >
+      <div className="m-8 p-8 bg-white rounded-xl">
         <div className="flex flex-col gap-8">
           {categories.map((category: TypeCategory) => (
             <div>
@@ -86,7 +64,8 @@ const SearchCond = () => {
   };
 
   return (
-    <div>
+    // ダイアログ用に全画面を覆う
+    <div className="fixed top-0 left-0 w-full h-full bg-slate-950 bg-opacity-80 z-50">
       {/* 閉じるボタン */}
       <button onClick={onClickClose} className={styles.close} />
 

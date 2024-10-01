@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import EpisodeCardList from "../../components/elements/card/EpisodeCardList";
 import { TypeEpisode } from "../../types/types";
 import PageTitle from "../../components/elements/pagetitle/PageTitle";
@@ -20,7 +20,7 @@ export default async function page() {
   const pagetitle = "Episode";
   return (
     <main>
-      {/* <Header /> */}
+      <Header />
       <PageTitle pagetitle={pagetitle} />
       <EpisodeCardList allEpisodeData={allEpisodeData} />
       {/* <Footer /> */}

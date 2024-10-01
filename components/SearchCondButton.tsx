@@ -6,7 +6,7 @@ import { showSearchCondDialog } from "@/hooks/searchCondSlice";
 
 const SearchCondButton = () => {
   const searchCond = useAppSelector((state) => state.searchCond.searchCond);
-  const dispach = useAppDispatch();
+  const dispatch = useAppDispatch();
 
   // 選択した文字列を表示
   const renderSearchCond = () => {
@@ -21,7 +21,7 @@ const SearchCondButton = () => {
 
   // クリックイベント
   const onClickSearchCond = () => {
-    dispach(showSearchCondDialog());
+    dispatch(showSearchCondDialog());
   };
 
   return (

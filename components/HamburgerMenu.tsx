@@ -1,7 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
-import GnavMenu from "@/components/header/GnavMenu";
+import GnavMenu from "@/components/unnecessary/GnavMenu";
 
 const HamburgerMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

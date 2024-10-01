@@ -1,36 +1,57 @@
 // 'use client'
 
-import SecSplash from "@/features/top/components/layout/secSplash/SecSplash";
-import SecEpisode from "@/features/top/components/layout/secEpisode/SecEpisode";
-import SecChapter from "@/features/top/components/layout/secChapter/SecChapter";
-import SecParody from "@/features/top/components/layout/secParody/SecParody";
-import SecMusic from "@/features/top/components/layout/secMusic/SecMusic";
-import SecMessage from "@/features/top/components/layout/secTheMessage/SecTheMessage";
-import SecRecommend from "@/features/top/components/layout/secRecommend/SecRecommend";
-import ParallaxCarousel from "@/features/top/components/ParallaxCarousel/ParallaxCarousel";
+import Logo from "@/components/Logo";
+import NewestEpisode from "@/components/NewestEpisode";
+import RecentVideo from "@/components/RecentVideo";
+import RecentChapter from "@/components/RecentChapter";
+import CarouselByButton from "@/components/CarouselByButton";
 import { EmblaOptionsType } from "embla-carousel";
-import SPVCarousel from "@/features/top/components/SPVCarousel/SPVCarousel";
-import { useAppSelector } from "@/store/store";
-import SearchCond from "@/components/SearchCond";
 
-//
-const OPTIONS: EmblaOptionsType = { slidesToScroll: "auto", loop: true };
-const SLIDE_COUNT = 10;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+import {
+  newestData,
+  episodeData,
+  parodyData,
+  musicData,
+  messageData,
+  chapterData
+} from "@/constants/topData";
 
 export default function Home() {
+  const carouselOptions: EmblaOptionsType = {
+    slidesToScroll: "auto",
+    loop: true
+  };
+
   return (
     <>
-      <SecSplash />
-      {/* <SecRecommend title="Recommend" buttonLabel="Recommend" /> */}
-      {/* <SecEpisode title="Episode" buttonLabel="Episode" /> */}
-      <SPVCarousel title="👉 Topics" slides={SLIDES} options={OPTIONS} />
-      {/* <ParallaxCarousel slides={SLIDES} options={OPTIONS} /> */}
-      <SecChapter title="Chapter" buttonLabel="Chapter" />
-      <SecEpisode title="Premium" buttonLabel="Premium" />
-      <SecParody title="Parody" buttonLabel="Parody" />
-      <SecMusic title="Music" buttonLabel="Music" />
-      <SecMessage title="The Message" buttonLabel="The Message" />
+      {/* ロゴ */}
+      <Logo />
+
+      {/* 最新動画 */}
+      <NewestEpisode {...newestData} />
+
+      {/* 過去動画 */}
+      <RecentVideo {...episodeData} />
+
+      {/* トピックス */}
+      {/* 話題の動画や告知、Musicビデオの公開など */}
+      <CarouselByButton options={carouselOptions} title="👉 Topics" />
+
+      {/* チャプター検索 */}
+      <RecentChapter {...chapterData} />
+
+      {/* プレミアム */}
+      {/* TODO：これはどういう意味の機能なのか？一旦保留 */}
+      {/* <RecentEpisode title="Premium" buttonLabel="Premium" /> */}
+
+      {/* パロディソング */}
+      <RecentVideo {...parodyData} />
+
+      {/* 音楽 */}
+      <RecentVideo {...musicData} />
+
+      {/* The Message */}
+      <RecentVideo {...messageData} />
     </>
   );
 }
